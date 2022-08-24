@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TESTES: TDD, Pytest</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+</head>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pytest_logo.svg/1200px-Pytest_logo.svg.png" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Afinal, o que é TDD?</b></h1>
+      <p>Durante o desenvolvimento de um software, é essencial aos desenvolvedores entregarem um software que funcione corretamente, com qualidade e no prazo. Para garantir estes pontos, é importante testarmos nossos softwares com o intuito de encontrar possíveis falhas. Dessa maneira, poderemos corrigir possíveis problemas antes de chegar ao usuário final.Mas, testar um software corretamente não é algo tão simples como pode parecer. Por isso, existem diversas metodologias que visam testar os diferentes componentes de uma solução de software de maneira correta. Algumas destas metodologias visam testar a integração entre os componentes de um software, enquanto outras visam testar cada um dos componentes de maneira isolada.Uma das metodologias que auxiliam a aplicar testes em nosso código de maneira mais granular é o TDD, que tem ficado cada vez mais popular. No TDD, você codifica o teste antes mesmo do código existir.</p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7zyEgLs5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/fdhxfmmmtf22sjauonrn.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://dkrn4sk0rn31v.cloudfront.net/2019/11/04105020/img-tdd.png" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Ciclo do TDD</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Perceba a existência dos três ciclos:</b></h1>
+      <p>Red: escreva um pequeno teste automatizado que, ao ser executado, irá falhar; Green: implemente um código que seja suficiente para ser aprovado no teste recém-escrito; Refactor: refatore o código, a fim dele ser melhorado, deixando-o mais funcional e mais limpo. Para realizar o teste em cada funcionalidade do seu código, você sempre irá seguir estes ciclos. Estes ciclos são comumente referenciados como red-green-refactor ou red-green-blue. A ideia é que você utilize estes ciclos para testes unitários - testes estes que visam avaliar o comportamento de classes e métodos em específico. Você irá identificar quais são os comportamentos esperados dos métodos a serem desenvolvidos. Ao invés de implementar o código inicialmente, você irá criar o código de teste ligado a essas classes e métodos que você deseja implementar. Como esse código ainda não estará devidamente implementado, o teste irá falhar (red), para que em seguida você faça a implementação dessa funcionalidade. Com a implementação, é esperado que esse teste passe (green). No final, você pode melhorar esse código, evitando duplicidade e trechos de código desnecessários (refactor) e irá fazer o teste novamente, onde ele deve passar. Assim você terá um código funcional e já devidamente testado.</p>
+    </div>
+  </div>
+</div>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Mas o que é o pytest?</b></h1>
+      <p>O pytest é uma framework de teste para python que provê soluções para executar testes e fazer validações diversas, com a possibilidade de estender com plugins e até rodar testes do próprio unittest do python. É o queridinho da comunidade por sua flexibilidade, pela forma que usa fixtures e pela facilidade de estender suas funcionalidades. Por mais que seja super popular, é curioso que não tenha muitos posts em português falando sobre essa belezinha, então vamos começar a fazer uma série de posts de como tirar proveito desta obra de arte.</p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pytest_logo.svg/1200px-Pytest_logo.svg.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Pytest_logo.svg/1200px-Pytest_logo.svg.png" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Entendendo como pytest funciona</b></h1>
+      <p>Antes de sair mudando toda sua code base para usar o brinquedo novo, vamos entender como o pytest funciona. Quando você executa o comando pytest dentro do seu ambiente virtual python, ele vai fazer um scan nos diretórios e subdiretórios do seu repositório procurando por arquivos que respeitem o formato de nomenclatura test_*.py ou *_test.py. Como o processo de descoberta é amplo e existe mais de uma forma de chamar o pytest para rodar (tanto comando direto pytest mencionado anteriormente, quanto com o comando python -m pytest), é altamente recomendado usar o padrão__init__.py em cada diretório para o pytest reconhecê-los como módulos e evitar colisão de nome nos arquivo de teste.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

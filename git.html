@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CONTROLE DE VERSÃO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+</head>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="https://videosdeti.com.br/wp-content/uploads/2018/12/git-githu-cover.png" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Git e Github</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>O que são, Como Configurar e Primeiros Passos</b></h1>
+      <p>Git e Github são utilizados no dia a dia das pessoas que criam software por um motivo bem simples: ter uma forma fácil de gerenciar o código fonte da aplicação, do sistema, do produto. Em um time pequeno, algumas pessoas ainda tentam tomar conta desses arquivos de maneiras um tanto questionáveis: compartilhar diretórios na rede, utilizar ferramentas como Dropbox, ou manter tudo em um servidor de FTP. Práticas totalmente desaconselhadas.</p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>O que é Git?</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>um Sistema de Controle de Versão</b></h1>
+      <p>Apenas poder acessar o código dos outros colaboradores não é suficiente. Precisamos manter o histórico dos nossos arquivos. Mais: das nossas modificações, pois muitas vezes mudamos arquivos em grupo, num movimento único (um commit). Dessa forma, podemos voltar atrás e recuperar o estado do sistema como ele era ontem, ou no ano passado, e comparar as mudanças, para encontrar bug, para estudar otimizações. Todos nossos arquivos, assim como seus históricos, ficam em um repositório e existiam vários sistemas que gerenciavam repositórios assim, como CVS e SVN. O Git é uma alternativa que tem um funcionamento mais interessante ainda: ele é distribuído e todo mundo tem uma cópia inteira do repositório, não apenas o "servidor principal". Isso trás grandes vantagens que você não precisa aprender nesse exato momento.</p>
+    </div>
+  </div>
+</div>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Github</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>usar Git sem precisar configurar e manter um servidor</b></h1>
+      <p>O Github tem sim muita relação com o Git. GitHub é uma plataforma para gerenciar seu código e criar um ambiente de colaboração entre devs, utilizando o Git como sistema de controle. Ele vai facilitar o uso do Git, escondendo alguns detalhes mais complicados de setup. É lá que você provavelmente vai ter seu repositório e usar no dia a dia. O sistema web que ele possui permite que você altere arquivos lá mesmo, apesar de não ser muito aconselhado, pois você não terá um editor, um ambiente de desenvolvimento e testes. Para se comunicar com o github e mexer nos arquivos do seu reposítorio, você pode usar a linha de comando, usando o comando do git e suas diretivas de commit, pull e push. Parece assustador? Há uma alternativa: usar um aplicativo desktop mais intuitivo:</p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
